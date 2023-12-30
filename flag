@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<style>
+    .flag{
+        background-color: red;
+        width: 900px;
+        height: 600px;
+    }
+
+    #grrr {
+        text-align: center;
+        background-color: white;
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        position: relative;
+        top:70px;
+        left: 380px;
+        font-size: 68px;
+    }
+
+    .flag > div{
+        background-color: blue;
+        width: 900px;
+        height: 300px;
+       
+        
+    }
+
+    .flag > p{
+        color:white;
+        text-align: center;
+        font-size: 70px;
+        
+    }
+
+
+
+</style>
+<html>
+<body>
+    <div class="flag">
+        <p>The Flag</P>
+        <div>
+            <div id="grrr">
+                <p>of</br> Laos</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

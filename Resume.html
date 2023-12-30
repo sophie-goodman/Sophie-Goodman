@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sophs Website (working title)</title>
+    <link rel="stylesheet" href="./webstyle.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<style>
+
+body{
+    margin:0;
+}
+
+.res{
+    float: right;
+    margin-right: 25px;
+    color: black;
+    font-family: 'Goldman', cursive;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu{
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    align-items:center;
+    justify-content: flex-start;
+}
+
+.base{
+    font-family:IBM;
+    margin-left: 50px;
+    margin-top: 40px;
+    line-height: 25px;
+    margin-bottom: 30px;;
+}
+
+.headers{
+    font-size: 30px;
+    font-weight:bolder;
+}
+
+.title{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.menbar{
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.points{
+  overflow: hidden;
+  border-right: .15em solid #43F560;
+  white-space: nowrap;
+  animation: typing 3.5s steps(30, end),
+    blink-caret .5s step-end;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #43F560 }
+}
+
+
+a {
+    font-family: 'Goldman', cursive;
+    color:black;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+a:hover{
+    color:#43F560;
+}
+
+@font-face {
+    font-family: IBM;
+    src: url(images/IBMPlexMono-Regular.ttf);
+}
+
+
+
+
+</style>
+
+<body>
+    <div class ="res">Resume</div>
+
+    <div class ="menu">
+        <div class="menimg">
+        <img src="images/group 8.png" alt ="menu icon">
+        </div>
+        <div class="nav">
+            <div class="menbar"><a href="./index.html">Home</a></div>
+            <div class="menbar"><a href="./aboutMe.html">About Me</a></div>
+            <div class="menbar"><a href="./Portfolio.html">Portfolio</a></div>
+        </div>
+    </div>
+
+
+  
+    <div class="base">
+        <div class="headers">Education</div>
+        <div class="title">Queen's University</div>
+        <div class="year"> 2020-2024</div>
+        <div class="points"><li>Working towards Computer Engineering Undergraduate Degree</li></div>
+        <div class="points"><li>Deans Scholar 2023</li></div>
+        <br>
+        <br>
+        <div class="headers">Experience</div>
+        <div class="title">Grant Thornton LLP Service Desk Support Analyst</div>
+        <div class="year"> 2023</div>
+        <br>
+        <div class="title">Queen's Vertical Farming Team Stack Developer</div>
+        <div class="year"> 2023-2024</div>
+        <br>
+        <div class="title">Ontario Engineering Compeition, Co-head of Graphic Design</div>
+        <div class="year"> 2023-2024</div>
+        <div class="points"><li>Design logo and graphics for the competition</li><li>Work closely with the marketing and web design teams
+            to  develop materials </li></div>
+         <br>
+        <div class="title">Queen's Backing Action on the Climate Crisis, Technology Director</div>
+        <div class="year"> 2022-2024</div>
+        <div class="points"><li>Lead Technological initiatives</li><li>Update and maintain website 0 using Webflow create and design new pages of the strive
+            and keep the website information current </li><li>Design marketing materials for Instagram and website</li></div>
+        <br>
+        <div class="title">Oconto Summer Camp Counselor and Activity Head</div>
+        <div class="year"> 2019-2022</div>
+        <div class="points"><li>Lifegaurding and teaching activity levels including sailing and kayaking</li><li>Scedule and supervise staff during activity periods</li></div>
+        <br>
+        <br>
+        <div class="headers">Projects</div>
+        <div class="title">Fight N' Flight Game</div>
+        <div class="year"> 2022</div>
+        <div class="points"><li>Developer for arcade styke shooter game written in C++ using SFML library</li><li>In charge of designing and coding GUI</li>
+        <li>Desing lead for game, created all game assets and backgrounds</li></div>
+        <br>
+        <br>
+        <div class="headers">Technical Proficiencies</div>
+        <div class="tings">
+        Programming Languages: C++, C, Python, Java, HTML, CSS, JavaScript, SQL, PHP
+        <div class="tings">Libraries: jQuery, SFML</div>
+        <div class="tings">Frameworks: Express.js, Node.js</div>
+        <div class="tings">Design Tools: Figma, Canva, WordPress</div>
+        <div class="tings">Project Management: Jira, Confluence, GitHub, Agile Methodologies</div>
+        <div class="tings">Database Management: MySQL</div>
+        <div class="tings">Office Tools: MS Excel, MS Word, MS PowerPoint, MS Teams</div>
+        <div class="tings">Additional: G Driver's License</div>
+        </div>
+        <br>
+        <br>
+        <div class="headers">Certifications and Courses</div>
+        <div class="tings">Microsoft Azure Fundamentals</div>
+        <br>
+        <br>
+        <div class="headers">References</div>
+        <div class="tings">Available upon request</div>
+    </div>
+
+
+    <script src="Resume.js" charset="utf-8"></script>
+</body>
+
+
+</html>

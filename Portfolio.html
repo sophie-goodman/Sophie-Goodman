@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sophs Website (working title)</title>
+    <link rel="stylesheet" href="./webstyle.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<style>
+
+body{
+    margin:0;
+
+}
+
+.port{
+    float: right;
+    margin-right: 25px;
+    color: black;
+    font-family: 'Goldman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+}
+
+.Titles{
+    margin-top: 35px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    font-family: 'Goldman';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    color: black;
+}
+
+
+.art{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin: 10px;
+}
+
+.carousel{
+    margin: 10px;
+}
+
+.images img{
+    width: 100%;
+    height: auto;
+}
+
+.menu{
+    display: flex;
+    align-items:center;
+    justify-content: flex-start;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menbar{
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.design{
+    margin-left: 75px;
+    color: black;
+    font-size: 23px;
+}
+
+.Process{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.list{
+    margin: px;
+}
+.points{
+    font-size: 15px;
+}
+.text{
+    margin: 20px;
+    margin-top: -10px;
+}
+
+.subheading{
+    margin: 20px;
+    font-size: 25px;
+}
+
+.overlay 
+{
+    position:absolute;
+    height:50px;
+    width:150px;
+    top:0;
+    left:0;
+    display:none;
+}
+
+a {
+    font-family: 'Goldman', cursive;
+    color:black;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+a:hover{
+    color:#43F560;
+}
+
+
+
+</style>
+
+<body>
+    <div class ="port">Portfolio</div>
+    
+    <div class ="menu">
+        <div class="menimg">
+        <img src="images/group 8.png" alt ="menu icon">
+        </div>
+        <div class="nav">
+            <div class="menbar"><a href="./index.html">Home</a></div>
+            <div class="menbar"><a href="./aboutMe.html">About Me</a></div>
+            <div class="menbar"><a href="./Resume.html">Resume</a></div>
+        </div>
+    </div>
+
+    <div class = "Titles">
+        Visual Art
+    </div>
+
+    <div class="carousel">
+        <div id="carouselExampleAutoPlaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/Portfolio/split.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/Portfolio/blobs1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/Portfolio/blobs2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/Portfolio/blobs3.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+          </div>
+    </div>
+  
+    <div class="art">
+        <div class ="images">
+            <img src = "images/Portfolio/candle.jpg">
+            <div class="overlay">
+                <div class="overlay">Artwork Name</div>
+            </div>
+        </div>
+        <div class ="images">    
+            <img src="images/Portfolio/blakehomie.jpg">
+            </div>
+        <div class ="images">    
+            <img src="images/Portfolio/hobie.jpg">
+        </div>
+        <div class ="images">    
+            <img src="images/Portfolio/swirls.jpg">
+        </div>
+        <div class ="images">    
+            <img src="images/Portfolio/jungle.jpg">
+        </div>
+        <div class ="images">    
+            <img src="images/Portfolio/skull.jpg">
+        </div>
+        <div class ="images">    
+            <img src="images/Portfolio/kekegurui.jpg">
+        </div>
+        <div class ="images">    
+            <img src="images/Portfolio/elf.jpg">
+        </div>
+        <div class ="images">    
+            <img src="images/Portfolio/saske.jpg">
+        </div>
+    </div>
+
+
+    <div class = "Titles">
+        Projects
+    </div>
+
+    <div class ="design">
+        <div class="Process">
+            Design Process
+        </div>
+        <ul class="list">
+            <li>Problem Statement and Research
+                <ul class="points">
+                    <li>Clearly define the problem and conduct user research to understand the users needs, 
+                        motivations, and behaviours
+                    </li>
+                    <li>Study competitors and trends in the current market</li>
+                    <li>Create user personas representing the primary user groups</li>
+                </ul>
+            </li>
+            <li>Project Goals and Planning
+                <ul class="points">
+                    <li>Map out user journeys and use cases to understand how the user interacts with the product</li>
+                    <li>Define key design goals based on the problem statement, user needs, and business goals</li>
+                    <li>Plan the structure of the information to ensure its logical and intuitive</li>
+                </ul>
+            </li>
+            <li>Mockups and Design
+                <ul class="points">
+                    <li>High level sketches and wireframes to outline basic design elements</li>
+                    <li>Develop low level prototypes that include all interactive components, this should be close
+                        to the final design and consider design elements such as typography, colours, and imagery
+                    </li>
+                    <li>Ensure considerations such as accessibility are taken into account in the final design</li>
+
+                </ul>
+            </li>
+            <li>User Testing and Feedback
+                <ul class="points">
+                    <li>Craft a survey that considers ..... potential downfalls</li>
+                    <li>Gather feedback from users on usibility and overall experience</li>
+                    <li>Based on the feedback from the user testing phase make necessary changes</li>
+                </ul>
+            </li>
+            <li>Documentation and Design Handoff
+                <ul class="points">
+                  <li>Provide detailed design documents including layouts, graphics, and interactive elements</li>
+                  <li>Colloborate closely with developers and particpate in final testing to ensure quality ensurence</li>
+                </ul>
+            </li>
+            <li>Next Steps
+                <ul class="points">
+                    <li>Deploy and monitor the product monitoring user interactions</li>
+                    <li>Gather post launch feedback and implement that into continuous iterative improvment
+                        to ensure the product continues to meet evolving user needs
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class = "Titles">
+        Fight N' Flight
+    </div>
+    <div class = "subtitle"></div>
+        Overview
+    <div class = "flight">
+        <div class = "text">
+            Fight N’ Flight is a two-player game developed in C++ inspired by retro arcade games like Galaga,
+             featuring pixel-art design. Gameplay consists of constant shooting from both players. The two 
+             players must move up and down the screen to avoid the others fire. There is also a missile
+              special attack that has a cooldown after use and other obstacles that can block the other player
+              . The first player that’s health drops to zero losses.
+        </div>
+        <div class ="subheading">
+            Role
+        </div>
+        <div class="text">This project was completed by a team of six programmers using C++ and the game development
+             library SFML. My role was design lead and UI programmer. Responsibilities of this role included designing
+              the user interfaces and making the sure the game provides a good user experience. In addition, I
+               designed all game assets and backgrounds as well as assisted coded the graphical user interfaces. </div>
+        <div class = "subheading">
+            Tools
+        </div>
+        <div class="text">The group used planning and version controls softwares such as Confluence, Jira, and Github 
+            to create an Agile development work style for the team. This consisted of frequent team meetings and weekly scrums.
+        team members developed the code using IDE's such as CLion and VSCode</div>
+        <div class ='subheading'>
+            Goals
+        </div>
+        <div class="text">The goal of this project was to create a fun and engaging game that could be played by two players.
+             The game was designed to be simple and easy to learn but also challenging and competitive. The GUI should be
+            easy to navigate and have clear navigational paths</div>
+        <div class ='subheading'>
+            Approach
+        </div>
+        <div class ='subheading'>
+            Performance Indicators
+        </div>
+        <div class ="text">
+            The key performance indicator in terms of user experience is the user interface responsiveness. The game should launch
+            quickly and display the menu to the user within a certain benchmark of time. All the buttons should be functional
+            and followed by quick page load times. The most important aspect is the responsiveness of the game characters when
+            moving and firing during gameplay as well as the health bar updating when damage is taken.
+        </div>
+        <div class ='subheading'>
+            Take Aways
+        </div>
+        <div class="text">
+            An important takeaway from this project was learning how to develop a project in a larger team. When not directed 
+            properly larger teams can have lower productivity and struggle to make a quality product, so this project taught me
+            invaluable skills in teamworking and project management. This included breaking problems down into their fundamental
+            challenges and assigning each task to the team member best suited to the task whether it be design, development or 
+            leadership roles. Learning how to use project management software’s like confluence and working in an agile development
+            environment highlighted the importance of frequent communication and continuously incorporating feedback from other
+            team members and testing.
+        </div>
+        <div class="flightimg">
+            <img src="images/FlightHome">
+        </div>
+    </div>
+
+
+
+    <div class = "Titles">
+        Melody Mixer
+    </div>
+    <div class = "Melody">
+        <div class = "text">
+            The process of song creation is highly intricate, often requiring a range of expertise and coordination among 
+            musicians and technicians, which can be exclusive and inefficient. The solution aims to address this be developing
+             neural network-based AI model capable of processing inputs from a guitar and generating a cohesive musical
+              composition. By implementing this system with a user-friendly interface, it simplifies the music creation
+               process but also makes it more accessible, enabling individuals without specialized skills to craft songs with 
+               the assistance of advanced AI tools.
+        </div>
+        <div class ="subheading">
+            Role
+        </div>    
+            <div class ='text'>
+                This project is a full year software development capstone project. It was completed in a group of 4 with each
+                 member having a different focus. My role on this team involved python development on the generative neural
+                 network as well as front end design and development.
+            </div>
+        
+        <div class = "subheading">
+            Tools
+        </div>
+        <div class ='text'>Tools that were implemented for this project are the IDE VSCode, version control software Github as
+            well as microsoft teams for collaboration. Numerous machine learning development libraries were also implemented for the
+        technical component's implementation. The front end was developed using HTML, CSS and JQuery. The design tool Figma was used
+        to create the wireframes and mockups for the user interface.
+    </div>
+        <div class ='subheading'>
+            Goals
+        </div>
+        <div class ='text'>
+            The goal of this project was to create a user friendly interface that allows users to create music using a guitar
+            and the AI model. The interface should be easy to navigate and have clear navigational paths. First a set of system
+             specifications including interface requirements were created after the problem definition. Examples include!!!
+        </div>
+    
+        <div class ='subheading'>
+                Performance Indicators
+        </div>
+        <div class ='text'>
+            Once what the system needs to be able to do is clearly laid out then performance requirements are decided on. These
+              can be thought of as benchmarks that if not met the system has failed from a user perspective.
+        </div>
+       
+       <div class ='subheading'>
+            Approach
+        </div>
+       
+        <div class ='subheading'>
+            Take Aways
+        </div>
+        <div class="text">
+            For this project the user-centered design approach was important to the process. Multiple rounds of user testing were
+             completed. By continuously testing prototypes of the software with real users who have different levels of knowledge in
+              music and technology, I ensured the final product not only met their expectations but provides a seamless user experience 
+              using the feedback gained from users. By splitting the survey into categories technical assessment, creativity, 
+              originality, and user experience the team can have insights into the performance and usability of each aspect of the system.
+        </div>
+    </div>
+
+    <div class = "Titles">
+        Ontario Engineering Competition
+    </div>
+    <div class = "OEC">
+        <div class = "problem">
+            
+        </div>
+        <div class ="subheading">
+            Role
+        </div>
+        <div class = "subheading">
+            Tools
+        </div>
+        <div class ='subheading'>
+            Goals
+        </div>
+        <div class ='subheading'>
+            Approach
+        </div>
+        <div class ='subheading'>
+            Performance Indicators
+        </div>
+        <div class ='subheading'>
+            Take Aways
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="Portfolio.js" charset="utf-8"></script>
+</body>
+
+
+</html>

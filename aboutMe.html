@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sophs Website (working title)</title>
+    <link rel="stylesheet" href="./webstyle.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@200&family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  
+</head>
+<style>
+
+body{
+    margin:0;
+}
+
+
+.back{
+    display: flex;
+}
+
+.pink{
+    background: black;
+    height: 100vh;
+    margin-left: 350px;
+   overflow-y: scroll;
+}
+
+
+.me{
+    font-family: 'Goldman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 2.3;
+    display:flex;
+    justify-content: right;
+    margin-right: 20px;
+    margin-left: 10px;
+    color: #43F560;
+
+}
+
+.text{
+    font-size: 20px;
+    font-family:'IBM', sans-serif;
+    color: white;
+    line-height: 1.7;
+    margin:70px
+}
+
+.green{
+    background:#43F560;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 350px;
+    height: 100vh;
+    position: fixed;
+}
+
+.menu{
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.num1{
+    position: relative;
+    z-index: 1;
+}
+
+.num2{
+    position: absolute;
+    left: -0.5px;
+
+}
+
+a {
+    font-family: 'Goldman', cursive;
+    color: #43F560;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+
+.nav{
+  margin-top: -100px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;  
+}
+
+button{
+    all: unset;
+}
+
+@font-face {
+    font-family: IBM;
+    src: url(images/IBMPlexMono-Regular.ttf);
+}
+
+
+
+</style>
+
+<body>
+
+    <div class="back">
+        <div class="green">
+        <div class="menu">
+            <button>
+            <img class="num1" src="images/Group 8.png" alt ="menu icon">
+            <img class="num2" src="images/Group 9.png"> 
+            </button>
+        </div>
+        <div class="nav">
+            <div class="menbar"><a href="./index.html">Home</a></div>
+            <div class="menbar"><a href="./Portfolio.html">Portfolio</a></div>
+            <div class="menbar"><a href="./Resume.html">Resume</a></div>
+        </div>
+
+            <a href="https://www.linkedin.com/in/sophielauragoodman/">
+                <img src="images/🦆 icon _linkedin_.png" alt ="linkedin logo"></a>
+            <a href="https://github.com/sophie-goodman?tab=projects">
+                <img src = "images/🦆 icon _github_.png" alt ="github logo"></a>
+            <a href="https://www.facebook.com/profile.php?id=100015364846717">
+                <img src = "images/🦆 icon _facebook outline_.png" alt="Facebook logo"></a>
+        </div>
+        <div class="pink">
+            <div class="me">About Me</div>
+            <div class="headshot"></div>
+            <div class="text">Welcome to my personal website!<br>
+                I'm thrilled to share my passion for computer engineering, graphic design, and user interface and experience design with you. As I approach the completion of my fourth year in the field, I am fueled by an insatiable curiosity and an unwavering dedication to creativity.<br>
+                With a deep appreciation for the intersection of art and technology, I find inspiration in the harmonious blend of aesthetics and functionality. Whether it's crafting captivating visuals or designing seamless user experiences, I strive to create innovative solutions that not only meet the needs of users but also delight them.<br>
+                Beyond the world of technology, I am an ardent lover of music, art, and science. These diverse interests have helped shape my multidimensional approach to problem-solving, infusing my work with a unique and well-rounded perspective.<br>
+                Enthusiasm runs through my veins, and I believe in embracing every challenge as an opportunity for growth and exploration. I am driven to push boundaries, think outside the box, and bring fresh ideas to life. Collaboration excites me, as it allows me to tap into the collective genius of like-minded individuals and create something truly extraordinary.<br>
+                So, join me on this journey of innovation and creativity. Together, we can transcend the ordinary and build extraordinary experiences that make a lasting impact. </div>
+    </div>
+    </div>
+
+    
+
+  
+
+
+    <script src="./aboutMe.js" charset="utf-8"></script>
+</body>
+
+
+</html>
