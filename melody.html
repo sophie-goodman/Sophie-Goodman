@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Sophs Website (working title)</title>
+    <title>Sophie Goodman</title>
     <link rel="stylesheet" href="./webstyle.css">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
@@ -23,17 +23,6 @@ body{
     width:50%
 }
 
-.Titles{
-    margin-top: 35px;
-    margin-left: 40px;
-    margin-bottom: 20px;
-    font-family: 'Goldman';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 50px;
-    color: black;
-}
-
 .menu{
     margin-top: 20px;
     margin-left: 20px;
@@ -42,78 +31,6 @@ body{
     justify-content: flex-start;
 }
 
-.container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-}
-
-.subheading{
-    font-family: 'Goldman', cursive;
-    font-size: 20px;
-    font-weight: 700;
-    margin-left: 30px;
-    margin-top: 30px;
-    margin-bottom: 5px;
-}
-
-.content{
-    margin-left: 30px;
-    margin-right:30px;
-    font-family:'IBM', sans-serif;
-}
-
-.contentTop{
-    grid-column: 1 / 2; 
-    margin-left: 30px;
-    font-family:'IBM', sans-serif;
-}
-.contentBottom{
-    grid-column: 1 / 2; 
-    grid-row: 2 / 3; 
-    margin-left: 30px;
-    font-family:'IBM', sans-serif;
-}
-.poster{
-    grid-column: 2 / 3; 
-    grid-row: 1 / 3;
-    
-}
-
-.logo{
-    display: flex;
-    justify-content: center;
-}
-
-.pac{
-    width:45%
-}
-.gal{
-    width: 45%;
-    margin-left: 50px;
-    margin-top: 50px;
-}
-
-.fightPages{
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-}
-
-.fightPages img{
-    width: 33%;   
-}
-
-.box{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    align-items: center;
-}
-.box img{
-    width: 70%;
-    margin-left:20px
-}
 
 .text{
     margin-left: 30px;
@@ -121,23 +38,6 @@ body{
     font-family: 'IBM', sans-serif;
 }
 
-.headingtwo{
-    font-family: 'IBM', sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    margin-left: 30px;
-    margin-top: 20px;
-    margin-bottom: 5px;
-}
-
-.headingthree{
-    font-family: 'IBM', sans-serif;
-    font-size: 15px;
-    font-weight: 600;
-    margin-left: 30px;
-    margin-top: 20px;
-    margin-bottom: 5px;
-}
 
 a {
     font-family: 'Goldman', cursive;
@@ -173,216 +73,7 @@ a:hover{
         </div>
     </div>
 
-    <div class = 'Titles'>Fight N' Flight</div>
 
-    <div class = 'container'>
-        <div class="block">
-            <div class ='subheading'>Overview</div>
-            <div class="contentTop">
-                Fight N’ Flight is a two-player game developed in C++ inspired by retro arcade games like Galaga, featuring pixel-art design. Gameplay consists of constant shooting from both players. The two players must move up and down the screen to avoid the others fire. There is also a missile special attack that has a cool down after use and other obstacles that can block the other player from landing hits. The first player that’s health drops to zero losses.</div>
-        </div>
-
-        <div class="block">
-            <div class ='subheading'>Role</div>
-            <div class="contentBottom">This project was completed by a team of eight programmers.<br> 
-                My role was Design Lead and UI Programmer. Responsibilities of this role included designing the user interfaces and making sure the game provides a good user experience. In addition, I designed and created all game assets, backgrounds, and sprites as well as assisted in coded the graphical user interfaces.</div>
-        </div>
-
-            <img class="poster" src="images/fightlogo.png" alt="Poster for Fight N' Flight">
-        
-
-        </div>
-
-        <div class="block">
-            <div class ='subheading'>Tools</div>
-            <div class="content">The group used planning and version controls softwares such as Confluence, Jira, 
-                and Github to create an Agile development work style for the team. This consisted of frequent team
-                 meetings and weekly scrums. team members developed the code using IDE's such as CLion and VSCode</div>
-        </div>
-
-        <div class="block">
-            <div class ='subheading'>Project Goals</div>
-            <div class="content">The goal of this project was to create an engaging game that could be played by
-                 two players. The game was designed to be simple and easy to learn but also fun and competitive.
-                  The GUI should be easy to navigate and have clear navigational paths</div>
-        </div>
-
-        <div class="block">
-            <div class ='subheading'>Research</div>
-            <div class="content">Before beginning the development of the UI/UX for Fight N’ Flight our team took
-                 a dual approach to research. We began with classic arcade games like Galaga and Pacman, to try 
-                 and uncover what gives them their simple and nostalgic charm. This was done by analyzing visual
-                  styles, control mechanisms and user interactions that defined these beloved titles. The aim was
-                   to capture the essence of theses vintage games while infusing modern design principles to enhance
-                    user experience.</div>
-        </div>
-
-        <div class="logo">
-            <img class="pac" src="images/pacman.png" alt="Pacman">
-            <img class="gal" src="images/galaga.png" alt="Galaga">
-        </div>
-
-        <div class="block">
-            <div class="content">Simultaneously we conducted user research to understand contemporary players
-                 expectations and preferences. This involved gathering feedback from a diverse group of gamers 
-                 through a survey. Focus was put into understanding what players valued in an arcade shooter. Merging
-                  these insights we plan to design an interface that blends retro appeal with contemporary ease of use.</div>
-        </div>
-
-        <div class="block">
-            <div class ='subheading'>Problem Definition</div>
-            <div class="content"></div>
-        </div>
-        
-        <div class="block">
-            <div class ='subheading'>Ideation</div>
-
-            <div class="box">
-            <img class='ideas' src="images/ideation.png" alt="Ideas">
-            <div class="content">In developing "Fight N’ Flight," we used a straightforward yet effective ideation process.
-                 We collaborated on a  online sticky note board, where each team member could put down their ideas, big or small.
-                  This ranged from gameplay features to design elements. By grouping these notes together, we could easily 
-                  see common themes and interesting concepts. This simple method helped us pool our thoughts and shape the 
-                  game in a collaborative, organized way.</div>
-                </div>
-        </div>
-
-        
-
-        <div class="block">
-            <div class ='subheading'>Game Flow</div>
-            <div class="box">
-                <div class="content">The first thing to begin the process of bringing
-                the game to life is defining all of the windows needed and creating a game flow that shows a high level
-                 overview of user navigation paths
-                <br>
-                There are seven windows for the game, including the title page, player titles, game in progress, pause,
-                 settings, high scores, and end screen.</div>
-        
-
-             <img class='flow' src="images/fightflow.png" alt="Game Flow">
-            </div>
-    </div>
-
-    <div class="box">    
-    <div class="block">
-            <div class ='subheading'> Use Cases</div>
-           
-            <div class="headingtwo">Player Launches Game </div>
-
-            <div class="headingthree">Participating Actors</div>
-            <div class="text">Player</div>
-            <div class="headingthree">Flow of Events</div>
-            <div class="text">
-                <ul>
-                    <li>1. User uses computer and opens application to run game file</li>
-                    <li>2. User launches / runs the game file</li>
-                    <li>3. User is brought to main menu</li>
-                    <li>4. Main menu is displayed, and menu buttons are made available to user</li>
-                    <li>5. User can press any of the menu buttons and the respective process a button is ran (i.e pressing the exit button will exit the game)</li>
-                </ul>
-            </div>
-            <div class="headingthree">Entry Condition</div>
-            <div class="text">User has downloaded and opens or runs the game file on a computer.</div>
-            <div class="headingthree">Exit Condition</div>
-            <div class="text">User closes the game by either clicking the exit game button or terminating the program outside the game.</div>
-            
-        
-        </div>
-
-
-
-        <div class="block">
-            <div class="headingtwo">Player Starts Game </div>
-
-            <div class="headingthree">Participating Actors</div>
-            <div class="text">Player(s)</div>
-            <div class="headingthree">Flow of Events</div>
-            <div class="text">
-                <ul>
-                    <li>1. User presses the play game button in main menu.</li>
-                    <li>2. Game loads.</li>
-                    <li>3. User(s) start to play.</li>
-                    <li>4. Game lasts until user is defeated.</li>
-                </ul>
-                </div>
-            <div class="headingthree">Entry Condition</div>
-            <div class="text">User opens or runs the game file on a computer and presses start game.</div>
-            <div class="headingthree">Exit Condition</div>
-            <div class="text">User closes the game by either clicking the exit game button or terminating the program outside the game.</div>
-            
-            </div>
-            </div>
-        
-            <div class="box">
-            <div class="text">The next step in the process is to define the use cases for each window. This is done by
-            creating a use case diagram that shows the different actions a user can take in each window. This helps
-             to define the functionality of each window and the interactions between them.</div>
-        
-            <img src="images/usecase.png" alt="Use Case">
-        </div>
-
-
-        <div class="block">
-            <div class ='subheading'>Wire Frames and Mockups</div>
-            <div class="content"> Wireframes laid the foundational structure for the game’s interface, outlining essential 
-                elements like the scoreboards, health bars, and navigational buttons. We iterated over these skeletal 
-                blueprints to refine the gameplay experience <br> 
-                Moving to mockups, we added color and detail, experimenting with the game's pixel-art style. These mockups 
-                offered a tangible look at the final game, essential for user testing and crucial in showcasing the game's 
-                visual direction and flow to stakeholders early in the development process.
-            </div>
-
-            <div class="fightPages">
-                <img src="images/FlightHome.png" alt="Title Page">
-                <img src="images/FightPlay.png" alt="Player Page">
-                <img src="images/FlightEnd.jpg" alt="Game Page">
-            </div>
-
-        </div>
-        <div class="block">
-            <div class ='subheading'>Accessibility</div>
-            <div class="content">To ensure an enjoyable and fair experience in "Fight or Flight," we've implemented key
-                 parameters such as customizable control settings to accommodate players with different physical abilities,
-                  enhancing overall game accessibility and user satisfaction. Examples of customizable settings are game contrast,
-                   key bindings, and keystroke sensitivity</div>
-        </div>
-        <div class="block">
-            <div class ='subheading'>Performance Indicators</div>
-            <div class="content">The key performance indicator in terms of user experience is the user interface responsiveness.
-                 The game should launch quickly and display the menu to the user within a certain benchmark of time. All the
-                  buttons should be functional and followed by quick page load times. The most important aspect is the
-                   responsiveness of the game characters when moving and firing during gameplay as well as the health bar 
-                   updating when damage is taken.</div>
-        </div>
-        <div class="block">
-            <div class ='subheading'>Take Aways</div>
-            <div class="content">An important takeaway from this project was learning how to develop a project in a larger 
-                team. When not directed properly larger teams can have lower productivity and struggle to make a quality product,
-                 so this project taught me invaluable skills in teamworking and project management. This included breaking
-                  problems down into their fundamental challenges and assigning each task to the team member best suited to the
-                   task whether it be design, development or leadership roles. Learning how to use project management software’s
-                    like confluence and working in an agile development environment highlighted the importance of frequent 
-                    communication and continuously incorporating feedback from other team members and testing.</div>
-        </div>
-       
-
-
-
-
-
-
-
-
-
-    </div>
-
-
-
-
-
-
-
-
+    <script src="melody.js" charset="utf-8"></script>
 
 </body>
