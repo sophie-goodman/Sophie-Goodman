@@ -6,98 +6,228 @@
     <meta charset="UTF-8">
     <title>Sophie Goodman</title>
     <link rel="stylesheet" href="./webstyle.css">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <style>
 
 body{
-    padding-bottom: 15px;
+    margin: 
 }
 
-.nav{
+
+.back{
+    background-image: url(./images/rainbow.png);
+    height: 2000px;
+}
+
+.mellogo img{
+    width:50%;
+    margin-left: 25%;
+    margin-right:auto;
+    margin-top:10%;
+
+}
+
+.content{
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right:10%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 1000px;
+    margin-bottom:10%;
+    font-family: ;
+    
+}
+
+.content h1{
+
+}
+
+.column {
+  float: left;
+  width: 40%;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+#tools{
+    width:100%;
+}
+
+
+.icons{
     display: flex;
-    justify-content: space-evenly;
-    width:50%
+    flex-direction: row;
+    width: 55%;
+    justify-content: space-between;
 }
 
-.menu{
-    margin-top: 20px;
-    margin-left: 20px;
+.icons1{
     display: flex;
-    align-items:center;
-    justify-content: flex-start;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
 }
 
-
-.text{
-    margin-left: 30px;
-    margin-right: 20px;
-    font-family: 'IBM', sans-serif;
-}
-
-.progress{
-
-    margin-top: 1%;
-    font-family:'Goldman';
-}
-
-.gears{
-    width: 50%;
-    height: auto;
-}
-
-.construction{
+.block{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    font-size: 160%;
-    margin-top: -10%;
-    font-family: 'IBM', sans-serif;
+
 }
 
-
-a {
-    font-family: 'Goldman', cursive;
-    color:black;
-    text-decoration: none;
-    font-size: 22px;
-}
-
-a:hover{
-    color:#43F560;
+.arrow{
+    margin-top:-35px;
 }
 
 @font-face {
-    font-family: IBM;
-    src: url(images/IBMPlexMono-Regular.ttf);
+    font-family: itim;
+    src: url();
 }
-
-
-
-
 </style>
+
+
 
 <body>
 
-    <div class ="menu">
-        <div class="menimg">
-        <img src="images/Group 9.png" alt ="menu icon">
+
+
+
+<div class="back">
+    
+    <div class="mellogo">
+    <img src="./images/mellogo.png">
+    </div>
+
+<div class="content">
+    <div id="problemdef">
+        <h1>Problem Definition</h1>
+        <p>Pet ownership offers companionship and health benefits, but caring for pets
+             with special needs—such as elderly animals, those with social anxiety, or
+              chronic health conditions—poses significant challenges. These pets need 
+              constant attention, frequent medical care, and tailored emotional support,
+               which can overwhelm owners with busy lifestyles or their own health issues.
+                This project aims to create a solution that simplifies managing these
+                 demanding care routines, supporting both high-needs pets and their owners. 
+                 Through interviews with owners of special needs animals, the project seeks
+                  to gain insights to inform a user-centered design, making pet care more 
+                  manageable and less stressful</p>
+    </div>
+
+    <div id="role">
+        <h1>My Role</h1>
+        <div class="row">
+            <div class="column">
+                <ul>
+                    <li>Ideation</li>
+                    <li>User Interviews</li>
+                    <li>User Research</li>
+                </ul>
+            </div>
+            <div class="column">
+                <ul>
+                    <li>Initial Sketches</li>
+                    <li>Low, mid, and high fidelity designs</li>
+                    <li>User Evaluation</li>
+                </ul>
         </div>
-        <div class="nav">
-            <div class="menbar"><a href="./index.html">Home</a></div>
-            <div class="menbar"><a href="./aboutMe.html">About Me</a></div>
-            <div class="menbar"><a href="./Portfolio.html">Portfolio</a></div>
+          </div>
+    </div>
+
+    <div id="tools">
+        <h1>Tools Used</h1>
+        <div class="icons">
+            <div class="block">
+                <img id="fig" src="./images/logos/Figma1.png">
+                <p>Figma</p>
+            </div>    
+            
+            <div class="block">
+                <img id="word" src="./images/logos/microsoft word.png">
+                <p>Microsoft Word</p>
+            </div>
+            
+            <div class="block">
+                <img id="forms" src="./images/logos/Forms.png">
+                <p>Google Forms</p>
+            </div>    
         </div>
     </div>
 
-    <div class="progress">
-        <img class='gears' src="./images/construction.png" alt="progress">
-        
-       <div class="construction">Under Construction</div>
-       </div>
+    <div id="goals">
+        <h1>Project Goals</h1>
+        <ul>
+            <li>Create a portal where all pet health details can be
+                 stored and found in one place.</li>
+            <li>Reduce the cognitive load associated with caring for a 
+                pet with special needs.</li>
+        </ul>
+    </div>
+
+    <div id="process">
+        <h1>Process</h1>
+        <div class="icons1">
+            <div class="block">
+                <img id="idea" src="./images/icons/Frame 9.png">
+                <p>Ideation</p>
+            </div>
+
+            <div class="block">
+                <img class="arrow" src="./images/Arrow.png">
+            </div>
+
+            <div class="block">
+                <img id="research" src="./images/icons/Frame 8.png">
+                <p>Related Work</p>
+            </div>
+
+            <div class="block">
+                <img class="arrow" src="./images/Arrow.png">
+                </div>
+
+            <div class="block">
+                <img id="character" src="./images/icons/Frame 12.png">
+                <p>Characterization</p>
+            </div>
+
+            <div class="block">
+            <img class="arrow" src="./images/Arrow.png">
+            </div>
+
+            <div class="block">
+                <img id="design" src="./images/icons/Frame 11.png">
+                <p>Prototyping</p>
+            </div>
+
+            <div class="block">
+                <img class="arrow" src="./images/Arrow.png">
+                </div>
+
+            <div class="block">
+                <img id="eval" src="./images/icons/Frame 10.png">
+                <p>Evaluation</p>
+            </div>
+        </div>
+    </div>
 
 
-    <script src="melody.js" charset="utf-8"></script>
+
+</div>
+
+</div>
+
 
 </body>

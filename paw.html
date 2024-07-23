@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sophie Goodman</title>
+    <link rel="stylesheet" href="./webstyle.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<style>
+
+body{
+    background-color: #FFFFF5;
+}
+
+
+.header img{
+    width:100%;
+}
+
+.content{
+    margin-left: 10%;
+    margin-right:10%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 1000px;
+    margin-bottom:10%;
+    font-family: itim;
+}
+
+.content h1{
+    color: #D56157;
+}
+
+.column {
+  float: left;
+  width: 40%;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+#tools{
+    width:100%;
+}
+
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    width: 55%;
+    justify-content: space-between;
+}
+
+.icons1{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.block{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.arrow{
+    margin-top:-35px;
+}
+
+@font-face {
+    font-family: itim;
+    src: url(./images/fonts/Itim-Regular.ttf);
+}
+
+
+html {
+
+box-sizing: border-box;
+--bgColorMenu : #1d1d27;
+--duration: .7s;    
+
+}
+
+html *,
+html *::before,
+html *::after {
+
+box-sizing: inherit;
+
+}
+
+
+.menu{
+
+margin: 0;
+display: flex;
+/* Works well with 100% width  */
+width: 100%;
+font-size: 1.5em;
+padding: 0 2.85em;
+position: relative;
+align-items: center;
+justify-content: center;
+background-color: var(--bgColorMenu);
+
+}
+
+.menu__item{
+
+all: unset;
+flex-grow: 1;
+z-index: 100;
+display: flex;
+cursor: pointer;
+position: relative;
+border-radius: 50%;
+align-items: center;
+will-change: transform;
+justify-content: center;
+padding: 0.55em 0 0.85em;
+transition: transform var(--timeOut , var(--duration));
+
+}
+
+.menu__item::before{
+
+content: "";
+z-index: -1;
+width: 4.2em;
+height: 4.2em;
+border-radius: 50%;
+position: absolute;
+transform: scale(0);
+transition: background-color var(--duration), transform var(--duration);
+
+}
+
+
+.menu__item.active {
+
+transform: translate3d(0, -.8em , 0);
+
+}
+
+.menu__item.active::before{
+
+transform: scale(1);
+background-color: var(--bgColorItem);
+
+}
+
+.icon{
+
+width: 2.6em;
+height: 2.6em;
+stroke: white;
+fill: transparent;
+stroke-width: 1pt;
+stroke-miterlimit: 10;
+stroke-linecap: round;
+stroke-linejoin: round;
+stroke-dasharray: 400;
+
+}
+
+.menu__item.active .icon {
+
+animation: strok 1.5s reverse;
+
+}
+
+@keyframes strok {
+
+100% {
+
+    stroke-dashoffset: 400;
+
+}
+
+}
+
+.menu__border{
+
+left: 0;
+bottom: 99%;
+width: 10.9em;
+height: 2.4em;
+position: absolute;
+clip-path: url(#menu);
+will-change: transform;
+background-color: var(--bgColorMenu);
+transition: transform var(--timeOut , var(--duration));
+
+}
+
+.svg-container {
+
+width: 0;
+height: 0;
+}
+
+
+@media screen and (max-width: 50em) {
+.menu{
+    font-size: .8em;
+}
+}
+
+
+
+
+
+</style>
+
+
+
+<body>
+
+
+
+<div class="header">
+    <img src="./images/pawback.png">
+</div>
+
+
+<div class="content">
+    <div id="problemdef">
+        <h1>Problem Definition</h1>
+        <p>Pet ownership offers companionship and health benefits, but caring for pets
+             with special needs—such as elderly animals, those with social anxiety, or
+              chronic health conditions—poses significant challenges. These pets need 
+              constant attention, frequent medical care, and tailored emotional support,
+               which can overwhelm owners with busy lifestyles or their own health issues.
+                This project aims to create a solution that simplifies managing these
+                 demanding care routines, supporting both high-needs pets and their owners. 
+                 Through interviews with owners of special needs animals, the project seeks
+                  to gain insights to inform a user-centered design, making pet care more 
+                  manageable and less stressful</p>
+    </div>
+
+    <div id="role">
+        <h1>My Role</h1>
+        <div class="row">
+            <div class="column">
+                <ul>
+                    <li>Ideation</li>
+                    <li>User Interviews</li>
+                    <li>User Research</li>
+                </ul>
+            </div>
+            <div class="column">
+                <ul>
+                    <li>Initial Sketches</li>
+                    <li>Low, mid, and high fidelity designs</li>
+                    <li>User Evaluation</li>
+                </ul>
+        </div>
+          </div>
+    </div>
+
+    <div id="tools">
+        <h1>Tools Used</h1>
+        <div class="icons">
+            <div class="block">
+                <img id="fig" src="./images/logos/Figma1.png">
+                <p>Figma</p>
+            </div>    
+            
+            <div class="block">
+                <img id="word" src="./images/logos/microsoft word.png">
+                <p>Microsoft Word</p>
+            </div>
+            
+            <div class="block">
+                <img id="forms" src="./images/logos/Forms.png">
+                <p>Google Forms</p>
+            </div>    
+        </div>
+    </div>
+
+    <div id="goals">
+        <h1>Project Goals</h1>
+        <ul>
+            <li>Create a portal where all pet health details can be
+                 stored and found in one place.</li>
+            <li>Reduce the cognitive load associated with caring for a 
+                pet with special needs.</li>
+        </ul>
+    </div>
+
+    <div id="process">
+        <h1>Process</h1>
+        <div class="icons1">
+            <div class="block">
+                <img id="idea" src="./images/icons/Frame 9.png">
+                <p>Ideation</p>
+            </div>
+
+            <div class="block">
+                <img class="arrow" src="./images/Arrow.png">
+            </div>
+
+            <div class="block">
+                <img id="research" src="./images/icons/Frame 8.png">
+                <p>Related Work</p>
+            </div>
+
+            <div class="block">
+                <img class="arrow" src="./images/Arrow.png">
+                </div>
+
+            <div class="block">
+                <img id="character" src="./images/icons/Frame 12.png">
+                <p>Characterization</p>
+            </div>
+
+            <div class="block">
+            <img class="arrow" src="./images/Arrow.png">
+            </div>
+
+            <div class="block">
+                <img id="design" src="./images/icons/Frame 11.png">
+                <p>Prototyping</p>
+            </div>
+
+            <div class="block">
+                <img class="arrow" src="./images/Arrow.png">
+                </div>
+
+            <div class="block">
+                <img id="eval" src="./images/icons/Frame 10.png">
+                <p>Evaluation</p>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+
+<menu class="menu">
+    
+    <button class="menu__item active" style="--bgColorItem: #ffb4b4;" >
+      <svg class="icon" viewBox="0 0 24 24">
+      </svg>
+    </button>
+
+    <button class="menu__item" style="--bgColorItem: #ffddb4;">
+      <svg class="icon" viewBox="0 0 24 24">
+        <path  d="M6.7,4.8h10.7c0.3,0,0.6,0.2,0.7,0.5l2.8,7.3c0,0.1,0,0.2,0,0.3v5.6c0,0.4-0.4,0.8-0.8,0.8H3.8
+        C3.4,19.3,3,19,3,18.5v-5.6c0-0.1,0-0.2,0.1-0.3L6,5.3C6.1,5,6.4,4.8,6.7,4.8z"/>
+        <path  d="M3.4,12.9H8l1.6,2.8h4.9l1.5-2.8h4.6"/>
+      </svg>
+    </button>
+
+    <button class="menu__item" style="--bgColorItem: #fff8b4;" >
+      <svg class="icon" viewBox="0 0 24 24">
+      <path  d="M3.4,11.9l8.8,4.4l8.4-4.4"/>
+      <path  d="M3.4,16.2l8.8,4.5l8.4-4.5"/>
+      <path  d="M3.7,7.8l8.6-4.5l8,4.5l-8,4.3L3.7,7.8z"/>
+    </button>
+
+    <button class="menu__item" style="--bgColorItem: #bfffb4;" > 
+      <svg class="icon" viewBox="0 0 24 24" >
+        <path  d="M5.1,3.9h13.9c0.6,0,1.2,0.5,1.2,1.2v13.9c0,0.6-0.5,1.2-1.2,1.2H5.1c-0.6,0-1.2-0.5-1.2-1.2V5.1
+          C3.9,4.4,4.4,3.9,5.1,3.9z"/>
+        <path  d="M4.2,9.3h15.6"/>
+        <path  d="M9.1,9.5v10.3"/>
+    </button>
+
+    <button class="menu__item" style="--bgColorItem:#b4d7ff;">
+      <svg class="icon" viewBox="0 0 24 24" >
+        <path  d="M5.1,3.9h13.9c0.6,0,1.2,0.5,1.2,1.2v13.9c0,0.6-0.5,1.2-1.2,1.2H5.1c-0.6,0-1.2-0.5-1.2-1.2V5.1
+          C3.9,4.4,4.4,3.9,5.1,3.9z"/>
+        <path  d="M5.5,20l9.9-9.9l4.7,4.7"/>
+        <path  d="M10.4,8.8c0,0.9-0.7,1.6-1.6,1.6c-0.9,0-1.6-0.7-1.6-1.6C7.3,8,8,7.3,8.9,7.3C9.7,7.3,10.4,8,10.4,8.8z"/>
+      </svg>
+    </button>
+
+    <div class="menu__border"></div>
+
+  </menu>
+
+  <div class="svg-container">
+    <svg viewBox="0 0 202.9 45.5" >
+      <clipPath id="menu" clipPathUnits="objectBoundingBox" transform="scale(0.0049285362247413 0.021978021978022)">
+        <path  d="M6.7,45.5c5.7,0.1,14.1-0.4,23.3-4c5.7-2.3,9.9-5,18.1-10.5c10.7-7.1,11.8-9.2,20.6-14.3c5-2.9,9.2-5.2,15.2-7
+          c7.1-2.1,13.3-2.3,17.6-2.1c4.2-0.2,10.5,0.1,17.6,2.1c6.1,1.8,10.2,4.1,15.2,7c8.8,5,9.9,7.1,20.6,14.3c8.3,5.5,12.4,8.2,18.1,10.5
+          c9.2,3.6,17.6,4.2,23.3,4H6.7z"/>
+      </clipPath>
+    </svg>
+  </div>
+
+    <script src="paw.js" charset="utf-8"></script>
+</body>
