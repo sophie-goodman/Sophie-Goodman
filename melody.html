@@ -69,7 +69,7 @@ body{
 .icons{
     display: flex;
     flex-direction: row;
-    width: 55%;
+    width:80%;
     justify-content: space-between;
 }
 
@@ -115,16 +115,25 @@ body{
 <div class="content">
     <div id="problemdef">
         <h1>Problem Definition</h1>
-        <p>Pet ownership offers companionship and health benefits, but caring for pets
-             with special needs—such as elderly animals, those with social anxiety, or
-              chronic health conditions—poses significant challenges. These pets need 
-              constant attention, frequent medical care, and tailored emotional support,
-               which can overwhelm owners with busy lifestyles or their own health issues.
-                This project aims to create a solution that simplifies managing these
-                 demanding care routines, supporting both high-needs pets and their owners. 
-                 Through interviews with owners of special needs animals, the project seeks
-                  to gain insights to inform a user-centered design, making pet care more 
-                  manageable and less stressful</p>
+        <p>The song creation process is inherently complex, often 
+            necessitating the collaboration of multiple musicians
+             and technicians. This complexity can make the process
+              exclusive and inefficient, creating barriers for
+               individuals without access to specialized skills or
+                equipment. The proposed solution seeks to simplify
+                 this process by developing a neural network-based
+                  AI model. This AI will process guitar inputs to
+                   generate cohesive musical compositions, outputting
+                    a five-track MIDI file that includes bass, drums,
+                     guitar, piano, and strings. The model will be
+                      trained on multiple musical datasets with multi-track
+                       piano rolls, allowing it to generate melodies 
+                       and rhythms influenced by user input. The scope
+                        of the project prioritizes the model's core 
+                        functionality and its ability to produce unique
+                         outputs based on instrumental input, rather
+                          than focusing on user interface design or
+                           genre specification.</p>
     </div>
 
     <div id="role">
@@ -132,15 +141,13 @@ body{
         <div class="row">
             <div class="column">
                 <ul>
-                    <li>Ideation</li>
-                    <li>User Interviews</li>
-                    <li>User Research</li>
+                    <li>Research</li>
+                    <li>GUI design</li>
+                    <li>GUI development</li>
                 </ul>
             </div>
             <div class="column">
                 <ul>
-                    <li>Initial Sketches</li>
-                    <li>Low, mid, and high fidelity designs</li>
                     <li>User Evaluation</li>
                 </ul>
         </div>
@@ -156,73 +163,95 @@ body{
             </div>    
             
             <div class="block">
-                <img id="word" src="./images/logos/microsoft word.png">
-                <p>Microsoft Word</p>
+                <img id="word" src="./images/logos/Visual studio.png">
+                <p>Visual Studio</p>
             </div>
             
             <div class="block">
-                <img id="forms" src="./images/logos/Forms.png">
-                <p>Google Forms</p>
-            </div>    
+                <img id="forms" src="./images/logos/Python.png">
+                <p>Python</p>
+            </div>  
+            
+            <div class="block">
+                <img id="forms" src="./images/logos/Css.png">
+                <p>CSS</p>
+            </div> 
+            
+            <div class="block">
+                <img id="forms" src="./images/logos/Javascript.png">
+                <p>HTML</p>
+            </div>  
+            <div class="block">
+                <img id="forms" src="./images/logos/Javascript-1.png">
+                <p>Javascript</p>
+            </div>
+             
         </div>
     </div>
 
     <div id="goals">
         <h1>Project Goals</h1>
-        <ul>
-            <li>Create a portal where all pet health details can be
-                 stored and found in one place.</li>
-            <li>Reduce the cognitive load associated with caring for a 
-                pet with special needs.</li>
-        </ul>
+        <p>The project's primary goal is to make music creation more
+             accessible and efficient for a broad audience. By automating
+              the generation of musical compositions, the AI model aims
+               to lower the barriers to entry into the music industry,
+                enabling even novice users to create complex musical
+                 pieces. The project seeks to streamline the music
+                  creation process and foster innovation by providing
+                   users with unique compositions that reflect their
+                    input.</p>
     </div>
 
-    <div id="process">
-        <h1>Process</h1>
-        <div class="icons1">
-            <div class="block">
-                <img id="idea" src="./images/icons/Frame 9.png">
-                <p>Ideation</p>
-            </div>
+    
+    <div class="design">
+        <h1>Design</h1>
+        <p>The design of Melody Mixer features an interactive
+             Graphical User Interface (GUI) paired with a Generative
+             Adversarial Network (GAN) to generate music based on
+              user-provided chords and melody. Users input an eight-bar
+               guitar melody as a MIDI file, which the system processes
+                using a pre-trained generator to extract features like
+                 tempo, style, beat resolution, and pitch. The GUI does
+                  not include the format of the input.</p>
 
-            <div class="block">
-                <img class="arrow" src="./images/Arrow.png">
-            </div>
-
-            <div class="block">
-                <img id="research" src="./images/icons/Frame 8.png">
-                <p>Related Work</p>
-            </div>
-
-            <div class="block">
-                <img class="arrow" src="./images/Arrow.png">
+                  <div class="row">
+                    <div class="column">
+                        <ul>
+                            <h2>Frontend Component</h2>
+                            <li>An intuitive user friendly interface</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <ul>
+                            <h2>Backend Component</h2>
+                            <li>Generative AI responsible for music generation</li>
+                        </ul>
                 </div>
 
-            <div class="block">
-                <img id="character" src="./images/icons/Frame 12.png">
-                <p>Characterization</p>
-            </div>
-
-            <div class="block">
-            <img class="arrow" src="./images/Arrow.png">
-            </div>
-
-            <div class="block">
-                <img id="design" src="./images/icons/Frame 11.png">
-                <p>Prototyping</p>
-            </div>
-
-            <div class="block">
-                <img class="arrow" src="./images/Arrow.png">
-                </div>
-
-            <div class="block">
-                <img id="eval" src="./images/icons/Frame 10.png">
-                <p>Evaluation</p>
-            </div>
-        </div>
     </div>
 
+    <div class="ui">
+        <h1>User Interface and Experience</h1>
+        <p>The frontend of the application was initially sketched 
+            as a low-fidelity prototype using the drawing software
+             Procreate to determine the best layout. Subsequently,
+              a high-fidelity prototype was created using the design
+               software Figma, detailing the user interface, aesthetics,
+                and navigational aspects without any code. Feedback 
+                from group members and potential users was gathered 
+                to identify unclear elements and improve the design 
+                before coding.
+        </br>
+    </br>
+            Key usability and design principles such as consistency,
+             optimizing operation, ease of use, and satisfaction were
+              prioritized. These principles influenced button placement,
+               the inclusion of instructions, and a stylized rainbow
+                aesthetic.
+            </p>
+
+        <img src="./images/melpage1.png">
+    </div>
 
 
 </div>

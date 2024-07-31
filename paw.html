@@ -22,7 +22,7 @@ body{
     width:100%;
 }
 
-.content{
+.content, .summary{
     margin-left: 10%;
     margin-right:10%;
     display:flex;
@@ -35,6 +35,20 @@ body{
 
 .content h1{
     color: #D56157;
+}
+
+.summary h1, h2{
+    color: #d56157;
+    font-family: itim;
+}
+
+.profiles{
+    display: flex;
+    flex-direction: column;
+}
+
+.profiles img{
+    margin: 40px;
 }
 
 .column {
@@ -80,6 +94,10 @@ body{
 
 .arrow{
     margin-top:-35px;
+}
+
+.whiteicon{
+    width:30%
 }
 
 @font-face {
@@ -358,40 +376,23 @@ height: 0;
 <menu class="menu">
     
     <button class="menu__item active" style="--bgColorItem: #ffb4b4;" >
-      <svg class="icon" viewBox="0 0 24 24">
-      </svg>
+      <img  class="whiteicon" src="./images/icons/white/Ideation.png">
     </button>
 
     <button class="menu__item" style="--bgColorItem: #ffddb4;">
-      <svg class="icon" viewBox="0 0 24 24">
-        <path  d="M6.7,4.8h10.7c0.3,0,0.6,0.2,0.7,0.5l2.8,7.3c0,0.1,0,0.2,0,0.3v5.6c0,0.4-0.4,0.8-0.8,0.8H3.8
-        C3.4,19.3,3,19,3,18.5v-5.6c0-0.1,0-0.2,0.1-0.3L6,5.3C6.1,5,6.4,4.8,6.7,4.8z"/>
-        <path  d="M3.4,12.9H8l1.6,2.8h4.9l1.5-2.8h4.6"/>
-      </svg>
+        <img class="whiteicon" src="./images/icons/white/Folder Content.png">
     </button>
 
     <button class="menu__item" style="--bgColorItem: #fff8b4;" >
-      <svg class="icon" viewBox="0 0 24 24">
-      <path  d="M3.4,11.9l8.8,4.4l8.4-4.4"/>
-      <path  d="M3.4,16.2l8.8,4.5l8.4-4.5"/>
-      <path  d="M3.7,7.8l8.6-4.5l8,4.5l-8,4.3L3.7,7.8z"/>
+        <img class="whiteicon" src="./images/icons/white/Be Marked.png">
     </button>
 
     <button class="menu__item" style="--bgColorItem: #bfffb4;" > 
-      <svg class="icon" viewBox="0 0 24 24" >
-        <path  d="M5.1,3.9h13.9c0.6,0,1.2,0.5,1.2,1.2v13.9c0,0.6-0.5,1.2-1.2,1.2H5.1c-0.6,0-1.2-0.5-1.2-1.2V5.1
-          C3.9,4.4,4.4,3.9,5.1,3.9z"/>
-        <path  d="M4.2,9.3h15.6"/>
-        <path  d="M9.1,9.5v10.3"/>
+        <img class="whiteicon" src="./images/icons/white/Pencil.png">
     </button>
 
     <button class="menu__item" style="--bgColorItem:#b4d7ff;">
-      <svg class="icon" viewBox="0 0 24 24" >
-        <path  d="M5.1,3.9h13.9c0.6,0,1.2,0.5,1.2,1.2v13.9c0,0.6-0.5,1.2-1.2,1.2H5.1c-0.6,0-1.2-0.5-1.2-1.2V5.1
-          C3.9,4.4,4.4,3.9,5.1,3.9z"/>
-        <path  d="M5.5,20l9.9-9.9l4.7,4.7"/>
-        <path  d="M10.4,8.8c0,0.9-0.7,1.6-1.6,1.6c-0.9,0-1.6-0.7-1.6-1.6C7.3,8,8,7.3,8.9,7.3C9.7,7.3,10.4,8,10.4,8.8z"/>
-      </svg>
+        <img class="whiteicon" src="./images/icons/white/Stats.png">
     </button>
 
     <div class="menu__border"></div>
@@ -407,6 +408,101 @@ height: 0;
       </clipPath>
     </svg>
   </div>
+
+
+  <div class="summary">
+  <div class="ideation">
+
+  </div>
+
+  <div class="related">
+    <p>The team explored previous research from academic journals that discusses topics such as human-animal interactions,
+         scheduling and organizational applications, pet owner applications, and mapping applications. The team also researched other
+         applications in the pet care market.
+          This research can help inform the design of PawPortal.</p>
+  </div>
+
+  <div class="characterization">
+    <h1>User Characterization</h1>
+    <p>The design of PawPortal is tailored to meet the needs of a diverse user group, based on interviews and research.</p>
+    <ul>
+        <li>
+            <h2>Age Range</h2>
+            <p>Users interviewed were between 20 and 60 years old, reflecting a broad spectrum of pet owners. 
+                The majority were over 50, aligning with the average pet owner age in Canada (45-56). This suggests
+                 the app must address age-related challenges like reduced hearing, motor skills, memory, and multitasking.</p>
+        </li>
+        <li>
+            <h2>User Needs</h2>
+            <p>Older users expressed a need for streamlined online booking processes, highlighting the importance of simplicity,
+                 readability, and accessibility in the design. Users, such as David and Jeff, view pets as companions, indicating
+                  the app should cater to emotional and sensitive interactions, akin to those with human family members.</p>
+        </li>
+        <li>
+            <h2>Lifestyle</h2>
+            <p>Users tend to be educated, busy, and struggling to balance work with pet care responsibilities. The app must be
+                 easy to learn and use, accommodating users' limited time for learning new tools.</p>
+        </li>
+    </ul>
+
+    <div class="profiles">
+        <img src="./images/userjohn.png">
+        <img src="./images/usersara.png">
+    </div>
+
+    <div class="usage">
+        <h1>Usage Scenarios</h1>
+    </div>
+  </div>
+
+  <div class="prototyping">
+    <h1>Prototyping Proccess for PawPortal</h1>
+    <ul>
+        <l1>
+            <h2>Low Fidelity</h2>
+        <p>The initial stage included determining main functionalities like medical tracking, general information storage, and business locators.
+            A rough sketch was created, leading to a low-fidelity prototype incorporating Human-Computer Interaction principles, such as grouping
+             related elements and using consistent design features to avoid confusion.</p>
+        </l1>
+
+        <li>
+        <h2>Mid Fidelity</h2>
+        <p>Based on feedback from the low-fidelity prototype, a mid-fidelity prototype was developed in Figma.
+            Adjustments were made to button sizes, labels, and overall navigation to address user confusion and enhance usability.
+             Features like appointment management and additional pet profile fields were integrated.</p>
+        </l1>
+
+        <li>
+            <h2>High Fidelity</h2>
+            <p>The high-fidelity prototype involved refining visual elements such as colors, fonts, and layout in Figma.
+                User feedback from the mid-fidelity prototype led to clearer labels, more prominent buttons for adding pets,
+                 and enhanced map features. Consistent design principles were applied to ensure a pleasant and intuitive user experience.
+                </p>
+            </l1>
+
+        
+    </ul>
+
+    <div class="mockup">
+    </br>
+        <a href="https://www.figma.com/proto/gM4jRmrS6QUG9YxHGYFJ4k/325-Hi-Fi-Prototype?type=design&node-id=57-110&t=qkqwA2OeYC8KFD3T-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=70%3A22">Click here</a>
+        for a link to the Figma mockup of PawPortal!
+    </div>
+
+  </div>
+
+  <div class="evaluation">
+  </br>
+    <h1>
+        User Evaluation
+    </h1>
+    <p>Diverse user testing was conducted with participants representing different age groups and technological familiarity.
+        The testing provided positive feedback on the application’s usability, helpfulness, and satisfaction. However, issues such
+         as unclear labels and lack of feedback for unexpected actions were identified. Recommendations for future improvements
+          included adjusting label colors and adding feedback for unexpected actions to enhance usability and clarity.</p>
+  </div>
+
+</div>
 
     <script src="paw.js" charset="utf-8"></script>
 </body>
