@@ -20,7 +20,7 @@ body{
 
 .back{
     background-image: url(./images/rainbow.png);
-    height: 2000px;
+    height: 3000px;
 }
 
 .mellogo img{
@@ -45,12 +45,17 @@ body{
 }
 
 .content h1{
+    margin-top:4%;
+    font-family: Asap;
+}
 
+.content h2{
+    font-family: Asap Small;
 }
 
 .column {
   float: left;
-  width: 40%;
+  width: 50%;
 }
 
 
@@ -69,8 +74,9 @@ body{
 .icons{
     display: flex;
     flex-direction: row;
-    width:80%;
+    width:90%;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .icons1{
@@ -93,10 +99,44 @@ body{
     margin-top:-35px;
 }
 
-@font-face {
-    font-family: itim;
-    src: url();
+.ui img{
+    width:100%;
+    margin-top: 20px;
 }
+
+
+
+.codes {
+    display: flex;
+}
+
+.codes img{
+    width:90%;
+    margin:10px;
+}
+
+.input{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.git{
+    margin-top:2%;
+    margin-bottom:5%;
+}
+
+@font-face {
+    font-family: Asap Small;
+    src: url(./images/fonts/Asap_Condensed/AsapCondensed-Medium.ttf);
+}
+
+@font-face{
+    font-family: Asap;
+    src: url(./images/fonts/Asap_Condensed/AsapCondensed-Black.ttf);
+}
+
+
 </style>
 
 
@@ -143,11 +183,11 @@ body{
                 <ul>
                     <li>Research</li>
                     <li>GUI design</li>
-                    <li>GUI development</li>
                 </ul>
             </div>
             <div class="column">
                 <ul>
+                    <li>GUI development</li>
                     <li>User Evaluation</li>
                 </ul>
         </div>
@@ -217,16 +257,18 @@ body{
                   <div class="row">
                     <div class="column">
                         <ul>
-                            <h2>Frontend Component</h2>
-                            <li>An intuitive user friendly interface</li>
+                            <h2>Backend Component</h2>
+                            <li>Generative AI responsible for music generation</li>
                         </ul>
                     </div>
                     <div class="column">
                         <ul>
-                            <h2>Backend Component</h2>
-                            <li>Generative AI responsible for music generation</li>
+                            <h2>Frontend Component</h2>
+                            <li>An intuitive user friendly interface</li>
                         </ul>
                 </div>
+
+        <img id="meldiagram" src="./images/meldiagram.png">
 
     </div>
 
@@ -248,12 +290,67 @@ body{
               prioritized. These principles influenced button placement,
                the inclusion of instructions, and a stylized rainbow
                 aesthetic.
+</br>       below are the two pages of the application coded using HTML, CSS, and Javascript.
             </p>
 
         <img src="./images/melpage1.png">
+        <img src="./images/melpage2.png">
     </div>
 
 
+    <div class="testing">
+        <h1>Final Product Testing</h1>
+        <div class="types">
+            <ul>
+                <h2>Durability Testing</h2>
+                <li>Melody Mixer was tested with various musical inputs to ensure scalability.
+                </li>
+                <li>Ten different guitar inputs were used, and each output was assessed for quality.</li>
+                <li>The outputs received an average score of 4.3 for rhythmic, melodic, and harmonic originality.</li>
+            </ul>
+
+            <ul>
+                <h2>User Testing</h2>
+                <li>A survey was created to evaluate demographics, quality of generated output, creativity and originality, and user experience.</li>
+                <li>Testing was conducted methodically using the same headphones and pre-recorded audio input to ensure fairness.</li>
+                <li>Users navigated the Melody Mixer interface and generated outputs, which were then evaluated through the survey.</li>
+            </ul>
+
+            Click here to see the full 
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSd1abvfMMOWP9BGhfe06rLF2DpZ_LsksOObbKFcb-huVmk4wA/viewform?usp=sf_link">user testing form.</a>
+
+            <h1>Testing Results</h1>
+            <ul>
+                <li>Quality of generated output received an average score of 4, indicating positive user sentiment.</li>
+                <li>Creativity and originality scored an average of 4.2, with all users stating they had not heard a similar song before.</li>
+                <li>Users recommended improvements in audio balance, bass reduction, and a genre condition.</li>
+                <li>User interface intuitiveness scored an average of 4.2, with suggestions for a loading feature and visual prompts during processing.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="qr">
+        <h1>Check it out!</h1>
+        <p>Below are QR codes of the input and output of the application. Scan them with
+            your phone and give it a listen.
+        </p>
+    <div class="codes">
+        <div class="input">
+        <img src="./images/inputQR.png">
+        <p>System input</p>
+        </div>
+        <div class="input">
+        <img src="./images/outputQR.png">
+        <p>System output</p>
+        </div>
+    </div>
+
+    <div class="git">
+    This is a link to the
+    <a href="https://github.com/jasminejade/melody-mixer.git"> Github</a>
+    to check out Melody Mixer's repository.
+    </div>
+    </div>
 </div>
 
 </div>

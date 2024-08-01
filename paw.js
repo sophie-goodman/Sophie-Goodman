@@ -4,6 +4,7 @@ const body = document.body;
 const menu = body.querySelector(".menu");
 const menuItems = menu.querySelectorAll(".menu__item");
 const menuBorder = menu.querySelector(".menu__border");
+const sect = body.querySelectorAll(".sect");
 let activeItem = menu.querySelector(".active");
 
 function clickItem(item, index) {
@@ -19,6 +20,9 @@ function clickItem(item, index) {
     
     item.classList.add("active");
     activeItem = item;
+    sect.forEach(sect => sect.classList.remove("active"));
+    // Show the content corresponding to the clicked item
+    sect[index].classList.add("active");
     offsetMenuBorder(activeItem, menuBorder);
     
     
