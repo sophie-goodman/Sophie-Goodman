@@ -20,9 +20,12 @@ function clickItem(item, index) {
     
     item.classList.add("active");
     activeItem = item;
-    sect.forEach(sect => sect.classList.remove("active"));
+
+
+    sect.forEach(section => section.classList.remove("active"));
     // Show the content corresponding to the clicked item
     sect[index].classList.add("active");
+    
     offsetMenuBorder(activeItem, menuBorder);
     
     
