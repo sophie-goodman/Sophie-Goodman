@@ -7,6 +7,7 @@ const menuBorder = menu.querySelector(".menu__border");
 const sect = body.querySelectorAll(".sect");
 let activeItem = menu.querySelector(".active");
 
+//add the first one is initially set to active
 function clickItem(item, index) {
 
     menu.style.removeProperty("--timeOut");
@@ -25,7 +26,7 @@ function clickItem(item, index) {
     sect.forEach(section => section.classList.remove("active"));
     // Show the content corresponding to the clicked item
     sect[index].classList.add("active");
-    
+
     offsetMenuBorder(activeItem, menuBorder);
     
     
