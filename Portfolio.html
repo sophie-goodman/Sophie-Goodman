@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Sophie Goodman</title>
+    <title>Sophs Website (working title)</title>
     <link rel="stylesheet" href="./webstyle.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
@@ -39,139 +39,21 @@ body{
     color: black;
 }
 
-.cards{
-    margin-top: 8%;
-}
-
-.outerbound{
-    width: 70%;
-    margin-left: 15%;
-    margin-top: 5%;
-    margin-right: auto;
-    padding: 20px;
-    outline-style: outset;
-    outline-color: #43F560;
-    outline-width: 10px;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    box-shadow: 0 1px 4px 0 rgba(0,0,0,.8);
-}
-
-.imagebound img{
-    width: 100%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-}
-
-.textbound{
-    margin-left: 5%;
-    margin-top: 5%;
-    font-family: 'IBM', sans-serif;
-}
-
-.cards a{
-    text-decoration: underline;
-}
-
-#title{
-    font-size: 200%;
-}
-
-
-[type=radio] {
-  display: none;
-}
-
-#slider {
-  height: 35vw;
-  position: relative;
-  perspective: 1000px;
-  transform-style: preserve-3d;
-}
-
-#slider label {
-  margin: auto;
-  width: 60%;
-  height: 100%;
-  border-radius: 4px;
-  position: absolute;
-  left: 0; right: 0;
-  cursor: pointer;
-  transition: transform 0.4s ease;
-}
-
-#s1:checked ~ #slide4, #s2:checked ~ #slide5,
-#s3:checked ~ #slide1, #s4:checked ~ #slide2,
-#s5:checked ~ #slide3 {
-  box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
-  transform: translate3d(-30%,0,-200px);
-}
-
-#s1:checked ~ #slide5, #s2:checked ~ #slide1,
-#s3:checked ~ #slide2, #s4:checked ~ #slide3,
-#s5:checked ~ #slide4 {
-  box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
-  transform: translate3d(-15%,0,-100px);
-}
-
-#s1:checked ~ #slide1, #s2:checked ~ #slide2,
-#s3:checked ~ #slide3, #s4:checked ~ #slide4,
-#s5:checked ~ #slide5 {
-  box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19);
-  transform: translate3d(0,0,0);
-}
-
-#s1:checked ~ #slide2, #s2:checked ~ #slide3,
-#s3:checked ~ #slide4, #s4:checked ~ #slide5,
-#s5:checked ~ #slide1 {
-  box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
-  transform: translate3d(15%,0,-100px);
-}
-
-#s1:checked ~ #slide3, #s2:checked ~ #slide4,
-#s3:checked ~ #slide5, #s4:checked ~ #slide1,
-#s5:checked ~ #slide2 {
-  box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
-  transform: translate3d(30%,0,-200px);
-}
-
-#slide1 {background-image: url('images/Portfolio/split.jpg');
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat;}
-#slide2 { background-image: url('images/Portfolio/blobs1.jpg');
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat;}
-#slide3 { background-image: url('images/Portfolio/blobs2.jpg');
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat;}
-#slide4 { background-image: url('images/Portfolio/blobs3.jpg');
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat;}
-#slide5 { background-image: url('images/Portfolio/sizes.jpg');
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat;}
-
 
 .art{
     display:grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
-    margin: 80px;
+    margin: 10px;
+}
+
+.carousel{
+    margin: 10px;
 }
 
 .images img{
     width: 100%;
     height: auto;
-}
-
-.images :hover{
-    box-shadow: 0 1px 4px 0 #43F560;
 }
 
 .menu{
@@ -192,6 +74,40 @@ body{
     margin-left: 15px;
 }
 
+.design{
+    margin-left: 75px;
+    color: black;
+    font-size: 23px;
+}
+
+.Process{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.list{
+    margin: px;
+}
+.points{
+    font-size: 15px;
+}
+.text{
+    margin: 20px;
+    margin-top: -10px;
+}
+
+.subheading{
+    margin: 20px;
+    font-size: 25px;
+}
+
+.flight{
+    display: flex;
+}
+
+.pic{
+    width:300px
+}
 
 .overlay 
 {
@@ -214,25 +130,6 @@ a:hover{
     color:#43F560;
 }
 
-@font-face {
-    font-family: IBM;
-    src: url(images/fonts/IBMPlexMono-Regular.ttf);
-}
-
-@font-face {
-    font-family: cyber;
-    src: url(images/fonts/PLANK___.TTF);
-}
-
-@font-face {
-    font-family: Cambai;
-    src: url(images/fonts/CambaiMinimalist-3zeJ6.ttf);
-}
-
-@font-face {
-    font-family: Lull;
-    src: url(images/fonts/LullabyFreeRegular-BLaE3.otf);
-}
 
 
 </style>
@@ -242,7 +139,7 @@ a:hover{
     
     <div class ="menu">
         <div class="menimg">
-        <img src="images/Group 8.png" alt ="menu icon">
+        <img src="images/group 8.png" alt ="menu icon">
         </div>
         <div class="nav">
             <div class="menbar"><a href="./index.html">Home</a></div>
@@ -251,80 +148,47 @@ a:hover{
         </div>
     </div>
 
-    <div class="cards">
-
-
-    <div class="outerbound">
-        <div class="imagebound">
-             <img src="./images/pawportal.jpg">
-        </div>
-    
-        <div class="textbound">
-            <p id="title">Paw Portal</p>
-            <p>A user-centered mobile application that makes pet care more
-                    manageable.</p>
-            <a class="cards" href="./paw.html">See case study</a>
-    </div>
-    
-        </div>
-
-        <div class="outerbound">
-            <div class="imagebound">
-                <img src="./images/melodylogo.png">
-            </div>
-    
-            <div class="textbound">
-                <p id="title">Melody Mixer</p>
-                <p>An AI powered web application for song composition.</p>
-                <a class="cards" href="./melody.html">See case study</a>
-            </div>
-    
-        </div>
-
-    <div class="outerbound">
-        <div class="imagebound">
-            <img src="./images/fightlogo.png">
-        </div>
-
-        <div class="textbound">
-            <p id="title">Fight N' Flight</p>
-            <p>A two player classic arcade style shooter game.</p>
-            <a href="./fight.html">See case study</a>
-        </div>
-
-    </div>
-
-    
-
-
-    
-    </div>
-    
-    
     <div class = "Titles">
         Visual Art
     </div>
 
-    <section id="slider">
-        <input type="radio" name="slider" id="s1">
-        <input type="radio" name="slider" id="s2">
-        <input type="radio" name="slider" id="s3" checked>
-        <input type="radio" name="slider" id="s4">
-        <input type="radio" name="slider" id="s5">
-        <label for="s1" id="slide1"></label>
-        <label for="s2" id="slide2"></label>
-        <label for="s3" id="slide3"></label>
-        <label for="s4" id="slide4"></label>
-        <label for="s5" id="slide5"></label>
-      </section>
+    <div class="carousel">
+        <div id="carouselExampleAutoPlaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/Portfolio/split.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/Portfolio/blobs1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/Portfolio/blobs2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/Portfolio/blobs3.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+          </div>
+    </div>
   
     <div class="art">
         <div class ="images">
             <img src = "images/Portfolio/candle.jpg">
+            <div class="overlay">
+                <div class="overlay">Artwork Name</div>
+            </div>
         </div>
         <div class ="images">    
             <img src="images/Portfolio/blakehomie.jpg">
-        </div>
+            </div>
         <div class ="images">    
             <img src="images/Portfolio/hobie.jpg">
         </div>
@@ -332,7 +196,7 @@ a:hover{
             <img src="images/Portfolio/swirls.jpg">
         </div>
         <div class ="images">    
-            <img src="images/Portfolio/devil.png">
+            <img src="images/Portfolio/jungle.jpg">
         </div>
         <div class ="images">    
             <img src="images/Portfolio/skull.jpg">
@@ -341,13 +205,185 @@ a:hover{
             <img src="images/Portfolio/kekegurui.jpg">
         </div>
         <div class ="images">    
-            <img src="images/Portfolio/jungle.jpg">
+            <img src="images/Portfolio/elf.jpg">
         </div>
         <div class ="images">    
             <img src="images/Portfolio/saske.jpg">
         </div>
     </div>
 
+
+    <div class = "Titles">
+        UI/UX DesignS
+    </div>
+
+    <div class ="design">
+        <div class="Process">
+            Design Process
+        </div>
+        <ul class="list">
+            <li>Problem Statement and Research
+                <ul class="points">
+                    <li>Clearly define the problem and conduct user research to understand the users needs, 
+                        motivations, and behaviours
+                    </li>
+                    <li>Study competitors and trends in the current market</li>
+                    <li>Create user personas representing the primary user groups</li>
+                </ul>
+            </li>
+            <li>Project Goals and Planning
+                <ul class="points">
+                    <li>Map out user journeys and use cases to understand how the user interacts with the product</li>
+                    <li>Define key design goals based on the problem statement, user needs, and business goals</li>
+                    <li>Plan the structure of the information to ensure its logical and intuitive</li>
+                </ul>
+            </li>
+            <li>Mockups and Design
+                <ul class="points">
+                    <li>High level sketches and wireframes to outline basic design elements</li>
+                    <li>Develop low level prototypes that include all interactive components, this should be close
+                        to the final design and consider design elements such as typography, colours, and imagery
+                    </li>
+                    <li>Ensure considerations such as accessibility are taken into account in the final design</li>
+
+                </ul>
+            </li>
+            <li>User Testing and Feedback
+                <ul class="points">
+                    <li>Craft a survey that considers ..... potential downfalls</li>
+                    <li>Gather feedback from users on usibility and overall experience</li>
+                    <li>Based on the feedback from the user testing phase make necessary changes</li>
+                </ul>
+            </li>
+            <li>Documentation and Design Handoff
+                <ul class="points">
+                  <li>Provide detailed design documents including layouts, graphics, and interactive elements</li>
+                  <li>Colloborate closely with developers and particpate in final testing to ensure quality ensurence</li>
+                </ul>
+            </li>
+            <li>Next Steps
+                <ul class="points">
+                    <li>Deploy and monitor the product monitoring user interactions</li>
+                    <li>Gather post launch feedback and implement that into continuous iterative improvment
+                        to ensure the product continues to meet evolving user needs
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class = "Titles">
+        Fight N' Flight
+    </div>
+    <div class = "flight">
+        <div class="'oneside">
+        <div class = "text">
+            Fight N’ Flight is a two-player game developed in C++ inspired by retro arcade games like Galaga,
+             featuring pixel-art design. Gameplay consists of constant shooting from both players. The two 
+             players must move up and down the screen to avoid the others fire. There is also a missile
+              special attack that has a cooldown after use and other obstacles that can block the other player
+              . The first player that’s health drops to zero losses.
+        </div>
+        <div class ="subheading">
+            Role
+        </div>
+        <div class="text">This project was completed by a team of six programmers user C++ and the game development
+             library SFML. My role was design lead and UI programmer. Responsibilities of this role included designing
+              the user interfaces and making the sure the game provides a good user experience. In addition, I
+               designed all game assets, backgrounds and coded the graphical user interfaces. </div>
+        <div class = "subheading">
+            Tools
+        </div>
+        <div class="text">The group used planning and version controls softwares such as Confluence, Jira, and Github 
+            to create an Agile development work style for the team. This consisted of frequent team meetings and weekly scrums.
+        team members developed the code using IDE's such as CLion and VSCode</div>
+        <div class ='subheading'>
+            Goals
+        </div>
+        <div class ='subheading'>
+            Approach
+        </div>
+        <div class ='subheading'>
+            Performance Indicators
+        </div>
+        <div class ='subheading'>
+            Take Aways
+        </div>
+        </div>
+        <div class="flightimg">
+            <img class="pic" src="images/FlightHome.png">
+        </div>
+    </div>
+
+
+
+    <div class = "Titles">
+        Melody Mixer
+    </div>
+    <div class = "Melody">
+        <div class = "text">
+            The process of song creation is highly intricate, often requiring a range of expertise and coordination among 
+            musicians and technicians, which can be exclusive and inefficient. The solution aims to address this be developing
+             neural network-based AI model capable of processing inputs from a guitar and generating a cohesive musical
+              composition. By implementing this system with a user-friendly interface, it simplifies the music creation
+               process but also makes it more accessible, enabling individuals without specialized skills to craft songs with 
+               the assistance of advanced AI tools.
+        </div>
+        <div class ="subheading">
+            Role
+        </div>    
+            <div class ='text'>
+                This project is a full year software development capstone project. It was completed in a group of 4 with each
+                 member having a different focus. My role on this team involved python development on the generative neural
+                 network as well as front end design and development.
+            </div>
+        
+        <div class = "subheading">
+            Tools
+        </div>
+        <div class ='text'>Tools that were implemented for this project are the IDE VSCode, version control software Github as
+            well as microsoft teams for collaboration. Numerous machine learning development libraries were also implemented for the
+        technical component's implementation. The front end was developed using HTML, CSS and JQuery. NOTEPUT IMAGES OF LOGOS FOR SOFTWARES USED TO MAKE IT LOOK NICER </div>
+        <div class ='subheading'>
+            Goals
+        </div>
+        <div class ='subheading'>
+            Approach
+        </div>
+        <div class ='subheading'>
+            Performance Indicators
+        </div>
+        <div class ='subheading'>
+            Take Aways
+        </div>
+    </div>
+
+    <div class = "Titles">
+        Ontario Engineering Competition
+    </div>
+    <div class = "OEC">
+        <div class = "problem">
+            
+        </div>
+        <div class ="subheading">
+            Role
+        </div>
+        <div class = "subheading">
+            Tools
+        </div>
+        <div class ='subheading'>
+            Goals
+        </div>
+        <div class ='subheading'>
+            Approach
+        </div>
+        <div class ='subheading'>
+            Performance Indicators
+        </div>
+        <div class ='subheading'>
+            Take Aways
+        </div>
+    </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
